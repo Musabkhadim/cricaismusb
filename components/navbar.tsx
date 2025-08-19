@@ -49,14 +49,18 @@ export function Navbar() {
           {/* Changed px-4 to px-6 */}
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3 group no-underline">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-green-600 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                Cricaismus
-              </span>
-            </Link>
+           <Link href="/" className="flex items-center space-x-1group no-underline">
+  <img 
+    src="/favicons.png" 
+    alt="Logo" 
+ className="w-12 h-12 object-contain md:w-16 md:h-16 lg:w-20 lg:h-20"
+  />
+
+  <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+    Cricaismus
+  </span>
+</Link>
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8 justify-center mx-auto">
               {navItems.map((item) => (

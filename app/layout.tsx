@@ -28,6 +28,23 @@ export const metadata: Metadata = {
     "business listings",
     "community directory",
   ],
+  icons: {
+    icon: [
+      { url: '/favicons.png', sizes: 'any' },
+      { url: '/favicons.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicons.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicons.png', sizes: '180x180' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/favicons.png',
+        color: '#3b82f6', // Your brand color
+      },
+    ],
+  },
   authors: [{ name: "Cricaismus Team" }],
   creator: "Cricaismus",
   publisher: "Cricaismus",
@@ -74,7 +91,6 @@ export const metadata: Metadata = {
     canonical: "https://cricaismus.com",
   },
   category: "business",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -422,10 +422,12 @@ export default function PrivacyPage() {
                   <strong>General Contact:</strong> info@cricaismus.com
                 </p>
                 <p>
-                  <strong>Address:</strong> 123 Business Street, Suite 100, New York, NY 10001
+                  <strong>Address:</strong> Offic 3/15,
+                              5th Floor,Silkcenter,
+                               Rehmanabad,Murree Road,Rawalpindi
                 </p>
                 <p>
-                  <strong>Phone:</strong> +1 (555) 123-4567
+                  <strong>Phone:</strong> +92 (347)0458847 
                 </p>
               </div>
 

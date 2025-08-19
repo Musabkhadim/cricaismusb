@@ -23,7 +23,7 @@ export default function NotFound() {
           {/* 404 Illustration */}
           <div className="mb-8">
             <div className="text-8xl md:text-9xl font-black text-transparent bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text">
-              404
+              
             </div>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto rounded-full mb-6"></div>
           </div>

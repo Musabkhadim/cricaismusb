@@ -10,16 +10,22 @@ export function HeroSection() {
   const [searchQuery, setSearchQuery] = useState("")
   const [location, setLocation] = useState("")
   const [category, setCategory] = useState("")
+  const [isLoading, setIsLoading] = useState(false) // Add loading state
 
   const handleSearch = () => {
+    setIsLoading(true) // Set loading to true when search starts
+    
     // Build search URL with parameters
     const params = new URLSearchParams()
     if (searchQuery) params.set("q", searchQuery)
     if (location) params.set("location", location)
     if (category) params.set("category", category.toLowerCase())
 
-    // Navigate to directory with search parameters
-    window.location.href = `/directory?${params.toString()}`
+    // Simulate a small delay for the loader to be visible
+    setTimeout(() => {
+      // Navigate to directory with search parameters
+      window.location.href = `/directory?${params.toString()}`
+    }, 500)
   }
 
   const stats = [
@@ -57,25 +63,25 @@ export function HeroSection() {
           <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20 animate-in slide-in-from-bottom-4 duration-1000 delay-700">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="relative md:col-span-2">
-       <Input
-        placeholder="Search businesses, services..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        onKeyPress={(e) => e.key === "Enter" && handleSearch()}
-        className="pr-12 h-14 text-lg border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 transition-all duration-300"
-        />
-       <Search className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5 pointer-events-none" />
-       </div>
-           <div className="relative">
-          <Input
-          placeholder="Location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          onKeyPress={(e) => e.key === "Enter" && handleSearch()}
-          className="pr-12 h-14 text-lg border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 transition-all duration-300"
-          />
-        <MapPin className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5 pointer-events-none" />
-       </div>
+                <Input
+                  placeholder="Search businesses, services..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && handleSearch()}
+                  className="pr-12 h-14 text-lg border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 transition-all duration-300"
+                />
+                <Search className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5 pointer-events-none" />
+              </div>
+              <div className="relative">
+                <Input
+                  placeholder="Location"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && handleSearch()}
+                  className="pr-12 h-14 text-lg border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 transition-all duration-300"
+                />
+                <MapPin className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5 pointer-events-none" />
+              </div>
 
               <Select value={category} onValueChange={setCategory}>
                 <SelectTrigger className="h-14 text-lg border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500">
@@ -89,27 +95,34 @@ export function HeroSection() {
                   <SelectItem value="services">Services</SelectItem>
                   <SelectItem value="automotive">Automotive</SelectItem>
                   <SelectItem value="beauty">Fitness</SelectItem>
-                   <SelectItem value="beauty">Education</SelectItem>
-                   <SelectItem value="beauty">Real Estate</SelectItem>
+                  <SelectItem value="beauty">Education</SelectItem>
+                  <SelectItem value="beauty">Real Estate</SelectItem>
                   <SelectItem value="beauty">Professional</SelectItem>
-                   <SelectItem value="beauty">Photography</SelectItem>
+                  <SelectItem value="beauty">Photography</SelectItem>
                   <SelectItem value="beauty">Entertainment</SelectItem>
-                    <SelectItem value="beauty">other </SelectItem>
-
-
-
-
-
+                  <SelectItem value="beauty">other</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <Button
               onClick={handleSearch}
-              className="w-full md:w-auto mt-6 h-14 px-12 text-lg bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              disabled={isLoading} // Disable button when loading
+              className="w-full md:w-auto mt-6 h-14 px-12 text-lg bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative"
             >
-              <Search className="h-5 w-5 mr-3" />
-              Search Now
+              {isLoading ? (
+                <>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-white"></div>
+                  </div>
+                  <span className="opacity-0">Search Now</span> {/* Hidden but maintains button size */}
+                </>
+              ) : (
+                <>
+                  <Search className="h-5 w-5 mr-3" />
+                  Search Now
+                </>
+              )}
             </Button>
           </div>
 
