@@ -11,7 +11,8 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Upload, X, Check, ArrowRight, ArrowLeft } from "lucide-react"
 import { SubmissionConfirmationPopup } from "@/components/submission-confirmation-popup"
-import Reactquill1 from "./reactquill/reactqill" // Assuming this path is correct and Reactquill1 is a valid component
+import dynamic from "next/dynamic"
+const Reactquill1 = dynamic(() => import("./reactquill/reactqill"), { ssr: false }) // Assuming this path is correct and Reactquill1 is a valid component
 import { doc, setDoc } from "firebase/firestore"
 import { db } from "../app/firebase/config" // Assuming this path is correct
 import axios from "axios"
