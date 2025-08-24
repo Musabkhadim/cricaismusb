@@ -30,7 +30,7 @@ export default function NotFound() {
 
           {/* Error Message */}
           <div className="space-y-6 mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Oops! Page Not Found</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Oops! Page Not Found but no problem you can move another paege</h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-lg mx-auto">
               The page you're looking for doesn't exist or has been moved. Don't worry, let's get you back on track!
             </p>

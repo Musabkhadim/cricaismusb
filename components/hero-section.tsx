@@ -10,20 +10,17 @@ export function HeroSection() {
   const [searchQuery, setSearchQuery] = useState("")
   const [location, setLocation] = useState("")
   const [category, setCategory] = useState("")
-  const [isLoading, setIsLoading] = useState(false) // Add loading state
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSearch = () => {
-    setIsLoading(true) // Set loading to true when search starts
-    
-    // Build search URL with parameters
+    setIsLoading(true)
+
     const params = new URLSearchParams()
     if (searchQuery) params.set("q", searchQuery)
     if (location) params.set("location", location)
     if (category) params.set("category", category.toLowerCase())
 
-    // Simulate a small delay for the loader to be visible
     setTimeout(() => {
-      // Navigate to directory with search parameters
       window.location.href = `/directory?${params.toString()}`
     }, 500)
   }
@@ -36,13 +33,13 @@ export function HeroSection() {
   ]
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-24 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       <div className="container mx-auto px-4 relative">
-        <div className="max-w-5xl mx-auto text-center space-y-12">
-          <div className="space-y-4">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
+          <div className="space-y-3">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none">
               <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent animate-in slide-in-from-bottom-4 duration-1000">
                 Discover Local
@@ -52,7 +49,8 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium animate-in fade-in-0 duration-1000 delay-500">
-              Find the best local businesses, read reviews, and connect with your community on{" "}
+              You can easily find the best local businesses and read their reviews on our website. We also give high
+              quality backlinks to help websites grow.{" "}
               <span className="font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                 Cricaismus
               </span>
@@ -94,20 +92,20 @@ export function HeroSection() {
                   <SelectItem value="retail">Retail</SelectItem>
                   <SelectItem value="services">Services</SelectItem>
                   <SelectItem value="automotive">Automotive</SelectItem>
-                  <SelectItem value="beauty">Fitness</SelectItem>
-                  <SelectItem value="beauty">Education</SelectItem>
-                  <SelectItem value="beauty">Real Estate</SelectItem>
-                  <SelectItem value="beauty">Professional</SelectItem>
-                  <SelectItem value="beauty">Photography</SelectItem>
-                  <SelectItem value="beauty">Entertainment</SelectItem>
-                  <SelectItem value="beauty">other</SelectItem>
+                  <SelectItem value="fitness">Fitness</SelectItem>
+                  <SelectItem value="education">Education</SelectItem>
+                  <SelectItem value="realestate">Real Estate</SelectItem>
+                  <SelectItem value="professional">Professional</SelectItem>
+                  <SelectItem value="photography">Photography</SelectItem>
+                  <SelectItem value="entertainment">Entertainment</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <Button
               onClick={handleSearch}
-              disabled={isLoading} // Disable button when loading
+              disabled={isLoading}
               className="w-full md:w-auto mt-6 h-14 px-12 text-lg bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative"
             >
               {isLoading ? (
@@ -115,7 +113,7 @@ export function HeroSection() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-white"></div>
                   </div>
-                  <span className="opacity-0">Search Now</span> {/* Hidden but maintains button size */}
+                  <span className="opacity-0">Search Now</span>
                 </>
               ) : (
                 <>
@@ -126,8 +124,8 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Enhanced Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 animate-in fade-in-0 duration-1000 delay-1000">
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 animate-in fade-in-0 duration-1000 delay-1000">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -136,14 +134,12 @@ export function HeroSection() {
               >
                 <div className="flex flex-col items-center space-y-3">
                   <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 shadow-lg flex items-center justify-center group-hover:shadow-xl transition-all duration-300`}
+                    className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 shadow-lg flex items-center justify-center group-hover:shadow-xl transition-all duration-300"
                   >
                     <stat.icon className={`h-8 w-8 ${stat.color}`} />
                   </div>
                   <div>
-                    <div
-                      className={`text-4xl md:text-5xl font-black ${stat.color} group-hover:scale-110 transition-transform duration-300`}
-                    >
+                    <div className={`text-4xl md:text-5xl font-black ${stat.color} group-hover:scale-110 transition-transform duration-300`}>
                       {stat.value}
                     </div>
                     <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium mt-1">

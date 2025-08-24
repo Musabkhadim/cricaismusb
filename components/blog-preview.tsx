@@ -82,13 +82,20 @@ export function BlogPreview() {
     <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Latest from Our Blog
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Stay updated with the latest business insights, tips, and industry
-            trends
-          </p>
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none text-center mb-10">
+ <h2 className="text-5xl md:text-6xl font-extrabold mb-6 
+  bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent 
+  drop-shadow-lg tracking-wide">
+  Latest from Our Blog
+</h2>
+
+
+</h2>
+
+          <p className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+ Stay updated and get ready to explore our blog for the latest business insights, practical tips, and industry trends.
+</p>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

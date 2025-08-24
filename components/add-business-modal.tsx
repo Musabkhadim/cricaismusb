@@ -208,6 +208,16 @@ export function AddBusinessModal({ open, onOpenChange }: AddBusinessModalProps) 
     }
   }
 
+  // Add this function above handleSubmit
+  function slugify(text: string) {
+    return text
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric with hyphens
+      .replace(/^-+|-+$/g, "");    // Remove leading/trailing hyphens
+  }
+
   const handleSubmit = async () => {
     // Perform full validation across all steps before submission
     let allValid = true
@@ -243,7 +253,7 @@ export function AddBusinessModal({ open, onOpenChange }: AddBusinessModalProps) 
         }
       }
       // Prepare data for Firestore
-      const documentId = crypto.randomUUID()
+      const documentId = slugify(formData.businessName)
       const firestoreData = {
         businessName: formData.businessName,
         category: formData.category,

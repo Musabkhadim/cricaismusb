@@ -12,22 +12,25 @@ import {
   Briefcase,
   Camera,
   Music,
+  Sprout,
 } from "lucide-react"
 import Link from "next/link"
 
 const categories = [
   { name: "Restaurants", icon: Utensils, color: "text-red-500" },
   { name: "Healthcare", icon: Stethoscope, color: "text-blue-500" },
+  { name: "Education", icon: GraduationCap, color: "text-yellow-500" },
+  { name: "Real Estate", icon: Home, color: "text-teal-500" },
   { name: "Retail", icon: ShoppingBag, color: "text-green-500" },
   { name: "Services", icon: Wrench, color: "text-orange-500" },
   { name: "Automotive", icon: Car, color: "text-purple-500" },
   { name: "Beauty & Spa", icon: Scissors, color: "text-pink-500" },
   { name: "Fitness", icon: Dumbbell, color: "text-indigo-500" },
-  { name: "Education", icon: GraduationCap, color: "text-yellow-500" },
-  { name: "Real Estate", icon: Home, color: "text-teal-500" },
+  
+  
   { name: "Professional", icon: Briefcase, color: "text-gray-500" },
   { name: "Photography", icon: Camera, color: "text-cyan-500" },
-  { name: "Entertainment", icon: Music, color: "text-rose-500" },
+  { name: "other business", icon: Sprout, color: "text-rose-500" },
 ]
 
 export function PopularCategories() {
@@ -35,10 +38,10 @@ export function PopularCategories() {
     <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Popular Categories</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore businesses by category and find exactly what you're looking for
-          </p>
+          <h2 className="text-5xl md:text-6xl font-bold mb-4bg-gradient-to-r from-blue-600 via-purple-600 to-green-600">Popular Categories</h2>
+        <p className="text-lg font-semibold text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">
+    Search and explore businesses by category and quickly find the services you need
+  </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">

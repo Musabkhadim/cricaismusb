@@ -12,6 +12,11 @@ import { useSearchParams } from "next/navigation"
 import { collection, getDocs } from "firebase/firestore"
 import { db } from "@/app/firebase/config"
 
+
+
+
+
+
 // Re-using the BusinessData interface from the business page
 interface BusinessData {
   id: string // Added for document ID
@@ -205,8 +210,8 @@ export default function DirectoryPage() {
         <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white pt-[0px]">
           <div className="container mx-auto px-4 py-12">
             <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Business Directory</h1>
-              <p className="text-xl opacity-90 max-w-2xl mx-auto">Discover amazing local businesses in your area</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Find Local Business Directory Near You   </h1>
+              <p className="text-xl opacity-90 max-w-2xl mx-auto">Find best amazing local businesses in your area. Browse categories, read  reviews, and get contact details instantly.</p>
             </div>
             {/* Search Bar */}
             <div className="max-w-4xl mx-auto">
@@ -294,7 +299,7 @@ export default function DirectoryPage() {
                 </CardContent>
               </Card>
               {/* New box for Google Ads */}
-              <Card className="shadow-lg">
+              {/* <Card className="shadow-lg">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-4">Advertise Here</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -302,7 +307,7 @@ export default function DirectoryPage() {
                   </p>
                   <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-white">Learn More</Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
             {/* Results */}
             <div className="flex-1">
@@ -574,3 +579,5 @@ function BusinessCard({
     </Link>
   )
 }
+
+
