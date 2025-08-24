@@ -89,7 +89,7 @@ export function Footer() {
                 asChild
               >
                 <a
-                  href="https://www.linkedin.com/in/masab-khadim-934b41284/"
+                  href="https://www.linkedin.com/in/musab-khadim-934b41284/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
