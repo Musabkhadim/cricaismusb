@@ -69,19 +69,7 @@ export default function BlogLayout({
 }) {
   return (
     <section className="blog-container">
-      {/* SEO-optimized header with primary keywords naturally integrated */}
-    
-
-      {/* Breadcrumb navigation for blog SEO */}
-     
-
-      {/* Blog category navigation */}
-     
-
-      {/* Featured topics section */}
-    
-
-      {/* Main content area */}
+   
       <main className="blog-content">
         {children}
       </main>
