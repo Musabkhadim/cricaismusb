@@ -6,8 +6,6 @@ import { PopularCategories } from "@/components/popular-categories"
 import { CallToAction } from "@/components/call-to-action"
 import { BlogPreview } from "@/components/blog-preview"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import FAQ from "@/components/FAQ"
-
 
 
 
@@ -21,8 +19,6 @@ export default function HomePage() {
       <BlogPreview />
       <TestimonialsSection />
       <CallToAction />
-    <FAQ/>
-
   
     </>
   )

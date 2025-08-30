@@ -11,29 +11,6 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Cricaismus - Top Business Directory & Local Business Reviews",
-    template: "%s | Cricaismus",
-  },
-  description:
-    "Find top local businesses in Pakistan with Cricaismus. Get your free business listing, and gain high-quality dofollow backlinks, and improve your SEO. Register your company online today!.",
-  keywords: [
-    "business directory",
-    "best local businesses",
-    "register business online in pakistan",
-    "“free business submission websites in Pakistan",
-    "Top IT Service directory submission",
-    "best free small business listing sites in islamabad",
-    "seo benefits of online listing" ,
-    "business listing in seo",
-    "Add Business page",
-    "Pakistani Restaurants Services submission free",
-    "Add Your Service Free in Pakistan",
-    "dofollow backlinks website list",
-    "it services for small businesses",
-     "High-Quality do follow backlinks site",
-      "Top do follow link submission platforms",
-       "backlinks dofollow",
-        "Find Any Company or Address in Pakistan",
     default: "Cricaismus - Business Directory & Local Business Reviews",
     template: "%s | Cricaismus",
   },
@@ -87,8 +64,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://cricaismus.com",
     siteName: "Cricaismus",
-    title: "Cricaismus - Pakistan No 1 Business Directory & Local Business Reviews",
-    description: "Find top local businesses in Pakistan with Cricaismus. Register your business online for free on Cricaismus.Boost your SEO with high-quality dofollow backlinks",
     title: "Cricaismus - Business Directory & Local Business Reviews",
     description: "Discover local businesses, read reviews, and connect with your community on Cricaismus.",
     images: [
@@ -103,7 +78,6 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cricaismus - Business Directory & Local Business Reviews",
-    description: "Discover the best local businesses across Pakistan on cricaismus. List your business online for free on Cricaismus. Gain powerful dofollow backlinks, and improve your SEO.",
     description: "Discover local businesses, read reviews, and connect with your community on Cricaismus.",
     images: ["/og-image.jpg"],
     creator: "@cricaismus",

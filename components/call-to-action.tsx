@@ -17,6 +17,9 @@ export function CallToAction() {
             <h2 className="text-2xl md:text-3xl font-bold">Ready to Grow Your Business online?</h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto">
              Join over thousands of successful businesses already listed on Cricaismus and start attracting more local customers today - completely free to get started!
+            <h2 className="text-2xl md:text-3xl font-bold">Ready to Grow Your Business?</h2>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto">
+              Join thousands of businesses already listed on Cricaismus. It's free to get started!
             </p>
           </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
@@ -26,6 +29,7 @@ export function CallToAction() {
               </div>
               <h3 className="font-semibold">Reach More Customers</h3>
               <p className="text-sm opacity-80">Connect with local customers searching for your business and services through our free directory listings</p>
+              <p className="text-sm opacity-80">Connect with local customers actively searching for your services</p>
             </div>
               <div className="text-center space-y-2">
               <div className="mx-auto w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
@@ -34,6 +38,7 @@ export function CallToAction() {
               <h3 className="font-semibold">Build Your Reputation</h3>
               <p className="text-sm opacity-80">
                 Collect customer reviews and showcase your quality services to attract more potential clients.
+                Collect reviews and showcase your excellent service to potential customers
               </p>
             </div>
 

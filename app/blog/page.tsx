@@ -189,10 +189,11 @@ export default function BlogPage() {
                   </Badge>
                 </div>
                 <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
-                  Business Insights & Expert Tips - Your Guide to Success
+                  Business Insights & Tips
                 </h1>
                 <p className="text-lg md:text-xl opacity-90 mb-8 max-w-3xl mx-auto leading-relaxed">
-                 Stay updated with the latest business growth, technology trends, education, online earning opportunities, and SEO strategies                </p>
+                  Stay ahead with expert advice and practical tips
+                </p>
               </div>
             </div>
           </div>

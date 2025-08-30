@@ -96,6 +96,13 @@ export function BlogPreview() {
  Stay updated and get ready to explore our blog for the latest business insights, practical tips, and industry trends.
 </p>
 
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Latest from Our Blog
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Stay updated with the latest business insights, tips, and industry
+            trends
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
