@@ -16,90 +16,90 @@ const Reactquill1 = dynamic(() => import("@/components/reactquill/reactqill"), {
 import { doc, setDoc } from "firebase/firestore"
 import { db } from "@/app/firebase/config" // Assuming this path is correct
 import axios from "axios"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 
 
-const categories = [
-  "Restaurant",
-  "Healthcare",
-  "Retail",
-  "Services",
-  "Automotive",
-  "Beauty & Spa",
-  "Fitness",
-  "Education",
-  "Real Estate",
-  "Professional",
-  "Photography ",
-  "Entertainment",
-  "other",
-]
-export const metadata: Metadata = {
-  title: "Free Business Directory Listing & High DA Backlinks | Cricaismus",
-  description: "Submit your business listing for free and get high-quality dofollow backlinks. Boost your local SEO with our business directory platform - no registration fees.",
-  keywords: [
-    // Primary Cluster - Business Directory
-    "free business directory submission",
-    "business listing submission sites",
-    "add business online free",
-    "local business directory",
-    "submit business listing",
+// const categories = [
+//   "Restaurant",
+//   "Healthcare",
+//   "Retail",
+//   "Services",
+//   "Automotive",
+//   "Beauty & Spa",
+//   "Fitness",
+//   "Education",
+//   "Real Estate",
+//   "Professional",
+//   "Photography ",
+//   "Entertainment",
+//   "other",
+// ]
+// export const metadata: Metadata = {
+//   title: "Free Business Directory Listing & High DA Backlinks | Cricaismus",
+//   description: "Submit your business listing for free and get high-quality dofollow backlinks. Boost your local SEO with our business directory platform - no registration fees.",
+//   keywords: [
+//     // Primary Cluster - Business Directory
+//     "free business directory submission",
+//     "business listing submission sites",
+//     "add business online free",
+//     "local business directory",
+//     "submit business listing",
     
-    // Secondary Cluster - Backlinks & SEO
-    "free dofollow backlinks 2025",
-    "high authority backlinks free",
-    "quality backlinks for business",
-    "business directory backlinks",
-    "local SEO backlinks",
+//     // Secondary Cluster - Backlinks & SEO
+//     "free dofollow backlinks 2025",
+//     "high authority backlinks free",
+//     "quality backlinks for business",
+//     "business directory backlinks",
+//     "local SEO backlinks",
     
-    // Long-tail Cluster - Easy Rank
-    "how to add business to directories",
-    "best free business directories 2025",
-    "small business listing platform",
-    "create business profile online",
-    "business citation sites free",
+//     // Long-tail Cluster - Easy Rank
+//     "how to add business to directories",
+//     "best free business directories 2025",
+//     "small business listing platform",
+//     "create business profile online",
+//     "business citation sites free",
     
-    // Problem-Solution Cluster
-    "promote business online free",
-    "business marketing tools free",
-    "increase business visibility",
-    "local business promotion",
+//     // Problem-Solution Cluster
+//     "promote business online free",
+//     "business marketing tools free",
+//     "increase business visibility",
+//     "local business promotion",
     
-    // Geographic + Service
-    "business directory Pakistan",
-    "online business registration guide",
-    "startup business directory",
-    "professional service listings"
-  ],
-  openGraph: {
-    title: "Get Free Business Listings & SEO Backlinks - Cricaismus Directory",
-    description: "Join thousands of businesses getting free high DA backlinks. Submit your business listing today and boost your local search rankings instantly.",
-    url: "https://cricaismus.com",
-    siteName: "Cricaismus Business Directory",
-    images: [
-      {
-        url: "https://cricaismus.com/business-directory-og.png",
-        width: 1200,
-        height: 630,
-        alt: "Free Business Directory & Backlinks - Cricaismus Platform",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+//     // Geographic + Service
+//     "business directory Pakistan",
+//     "online business registration guide",
+//     "startup business directory",
+//     "professional service listings"
+//   ],
+//   openGraph: {
+//     title: "Get Free Business Listings & SEO Backlinks - Cricaismus Directory",
+//     description: "Join thousands of businesses getting free high DA backlinks. Submit your business listing today and boost your local search rankings instantly.",
+//     url: "https://cricaismus.com",
+//     siteName: "Cricaismus Business Directory",
+//     images: [
+//       {
+//         url: "https://cricaismus.com/business-directory-og.png",
+//         width: 1200,
+//         height: 630,
+//         alt: "Free Business Directory & Backlinks - Cricaismus Platform",
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
   
-  // Additional SEO metadata
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://cricaismus.com"
-  },
+//   // Additional SEO metadata
+//   robots: "index, follow",
+//   alternates: {
+//     canonical: "https://cricaismus.com"
+//   },
   
-  // Schema markup for better SERP appearance
-  other: {
-    "google-site-verification": "1578af168b9d05d6",
+//   // Schema markup for better SERP appearance
+//   other: {
+//     "google-site-verification": "1578af168b9d05d6",
   
-  }
-};
+//   }
+// };
 const steps = [
   { id: 1, title: "Basic Information", description: "Tell us about your business" },
   { id: 2, title: "Location & Contact", description: "Where can customers find you?" },
