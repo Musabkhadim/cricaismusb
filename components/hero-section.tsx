@@ -63,7 +63,7 @@ export function HeroSection() {
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium animate-in fade-in-0 duration-1000 delay-500">
               You can easily find the best local businesses and read their reviews on our website. We also give high
               quality backlinks to help websites grow.{" "}
-              Find the best local businesses, read reviews, and connect with your community on{" "}
+              
               <span className="font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                 Cricaismus
               </span>
