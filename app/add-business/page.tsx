@@ -19,21 +19,21 @@ import axios from "axios"
 // import { Metadata } from "next"
 
 
-// const categories = [
-//   "Restaurant",
-//   "Healthcare",
-//   "Retail",
-//   "Services",
-//   "Automotive",
-//   "Beauty & Spa",
-//   "Fitness",
-//   "Education",
-//   "Real Estate",
-//   "Professional",
-//   "Photography ",
-//   "Entertainment",
-//   "other",
-// ]
+const categories = [
+  "Restaurant",
+  "Healthcare",
+  "Retail",
+  "Services",
+  "Automotive",
+  "Beauty & Spa",
+  "Fitness",
+  "Education",
+  "Real Estate",
+  "Professional",
+  "Photography ",
+  "Entertainment",
+  "other",
+]
 // export const metadata: Metadata = {
 //   title: "Free Business Directory Listing & High DA Backlinks | Cricaismus",
 //   description: "Submit your business listing for free and get high-quality dofollow backlinks. Boost your local SEO with our business directory platform - no registration fees.",
