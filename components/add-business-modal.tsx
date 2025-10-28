@@ -555,7 +555,7 @@ export function AddBusinessModal({ open, onOpenChange }: AddBusinessModalProps) 
                     </div>
                   </div>
                   <div>
-                    <Label htmlFor="website">Website (Optional)</Label>
+                    <Label htmlFor="website">Website </Label>
                     <Input
                       id="website"
                       value={formData.website}
