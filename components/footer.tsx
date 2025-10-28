@@ -226,11 +226,16 @@ export function Footer() {
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@cricaismus.com</span>
+                <span>awaiszakir787@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4" />
+                <span>musabkhadim363@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+92347 0458847</span>
+                <span>+92312 5266837</span>
+                 <span>+92347 0458847</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />

@@ -54,7 +54,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Our Office",
-      details: ["Office 3/15 5th floor Silkcenter Rehmanabad Rawalpindi Pakistan"],
+      details: ["Office 3/15 5th floor Silkcenter Rahmanabad Rawalpindi Pakistan"],
       color: "from-blue-500 to-purple-500",
     },
     {
@@ -66,7 +66,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@cricaismus.com", "musabkhadim363@gmail.om"],
+      details: ["awaiszakir787@gmail.com", "musabkhadim363@gmail.com"],
       color: "from-purple-500 to-pink-500",
     },
    
