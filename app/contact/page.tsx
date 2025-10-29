@@ -60,7 +60,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+92347 0458847","+92341 0586695"],
+      details: ["+92347 0458847","+92312 5266834"],
       color: "from-green-500 to-blue-500",
     },
     {
